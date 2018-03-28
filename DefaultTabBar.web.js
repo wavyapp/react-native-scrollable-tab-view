@@ -68,7 +68,6 @@ const DefaultTabBar = createReactClass({
       backgroundColor: 'navy',
       bottom: 0,
     };
-    console.log({ currentPage });
     const translateX = this.props.scrollValue.interpolate({
       inputRange: [0, 1],
       outputRange: [0,  containerWidth / numberOfTabs],
