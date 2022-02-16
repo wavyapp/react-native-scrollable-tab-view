@@ -155,7 +155,6 @@ const ScrollableTabView = createReactClass({
       automaticallyAdjustContentInsets={false}
       contentOffset={{ x: this.props.initialPage * this.state.containerWidth, }}
       ref={(scrollView) => { this.scrollView = scrollView; }}
-      className="react-native-tab-view"
       onScroll={
         Animated.event([{
           nativeEvent: { contentOffset: { x: this.state.scrollX } }
