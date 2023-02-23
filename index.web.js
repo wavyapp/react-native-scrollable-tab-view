@@ -1,15 +1,11 @@
 const React = require('react');
 const PropTypes = require('prop-types')
-const {
-  Component,
-} = React;
 const createReactClass = require('create-react-class');
 const ReactNative = require('react-native');
 const {
   Dimensions,
   View,
   Animated,
-  ScrollView,
   StyleSheet,
   InteractionManager,
   Platform,
