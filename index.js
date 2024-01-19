@@ -3,7 +3,6 @@ const ReactNative = require('react-native');
 const createReactClass = require('create-react-class');
 const {
   Dimensions,
-  ViewPropTypes,
   View,
   Animated,
   Platform,

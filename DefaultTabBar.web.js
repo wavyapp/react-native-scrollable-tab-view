@@ -4,7 +4,6 @@ const createReactClass = require('create-react-class');
 const {
   StyleSheet,
   Text,
-  ViewPropTypes,
   View,
   Animated,
 } = ReactNative;

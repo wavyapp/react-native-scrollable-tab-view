@@ -4,7 +4,6 @@ const createReactClass = require('create-react-class');
 const {
   View,
   Animated,
-  ViewPropTypes,
   StyleSheet,
   ScrollView,
   Text,
