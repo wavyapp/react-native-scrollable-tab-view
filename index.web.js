@@ -1,5 +1,4 @@
 const React = require('react');
-const PropTypes = require('prop-types')
 const createReactClass = require('create-react-class');
 const ReactNative = require('react-native');
 const {
@@ -22,20 +21,6 @@ const ScrollableTabView = createReactClass({
   statics: {
     DefaultTabBar,
     ScrollableTabBar,
-  },
-
-  propTypes: {
-    tabBarPosition: PropTypes.oneOf(['top', 'bottom', 'overlayTop', 'overlayBottom',]),
-    initialPage: PropTypes.number,
-    page: PropTypes.number,
-    onChangeTab: PropTypes.func,
-    onScroll: PropTypes.func,
-    renderTabBar: PropTypes.any,
-    style: View.propTypes.style,
-    contentProps: PropTypes.object,
-    scrollWithoutAnimation: PropTypes.bool,
-    locked: PropTypes.bool,
-    prerenderingSiblingsNumber: PropTypes.number,
   },
 
   getDefaultProps() {
