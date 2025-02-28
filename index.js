@@ -210,7 +210,8 @@ const ScrollableTabView = createReactClass({
         ref={(scrollView) => { this.scrollView = scrollView; }}
         onScroll={Animated.event(
           [{ nativeEvent: { contentOffset: { x: this.state.scrollXIOS, }, }, }, ],
-          { useNativeDriver: true, listener: this._onScroll, }
+          // Using an arrow function to prevent weird maximum call stack error
+          { useNativeDriver: true, listener: (e) => this._onScroll(e), }
         )}
         onMomentumScrollBegin={this._onMomentumScrollBeginAndEnd}
         onMomentumScrollEnd={this._onMomentumScrollBeginAndEnd}
