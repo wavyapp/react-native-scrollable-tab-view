@@ -244,7 +244,7 @@ const ScrollableTabView = createReactClass({
           }, ],
           {
             useNativeDriver: true,
-            listener: this._onScroll,
+            listener: (e) => this._onScroll(e),
           },
         )}
         ref={(scrollView) => { this.scrollView = scrollView; }}
